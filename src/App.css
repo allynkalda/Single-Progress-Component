@@ -1,22 +1,17 @@
 .App {
   text-align: center;
+  padding: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
+progress, progress[role] {
+  appearance: none;
+  border: none;
+  background-size: auto;
+  height: 50px;
+  width: 20%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
-}
+progress::-webkit-progress-bar {background-color: #aaa; width: 100%;}
+progress::-webkit-progress-value {background-color: #ff6b6b !important;}
+progress {background-color: #aaa;}
+progress::-moz-progress-bar {background-color: #ff6b6b !important;}
